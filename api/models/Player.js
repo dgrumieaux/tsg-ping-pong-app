@@ -5,13 +5,14 @@ module.exports = {
     attributes: {
         id: {
             type: 'integer',
-            primaryKey: true,
-            foreignKey: true,
             autoIncrement: true,
-            required: true
+            defaultsTo: 1
         }, 
         name: {
             type: 'string',
+            primaryKey: true,
+            foreignKey: true,
+            unique: true,
             required: true
         },
         email: {

@@ -8,7 +8,7 @@ module.exports = {
             primaryKey: true,
             foreignKey: true,
             autoIncrement: true,
-            required: true
+            defaultsTo: 1
         }, 
 
 		winner: {
@@ -38,8 +38,7 @@ module.exports = {
 		},
 
 		date: {
-			type: 'date',
-			required: true
+			type: 'date'
 		},
 
 		belongsTo: {
